@@ -1,0 +1,1039 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+HTML5 display-role reset for older browsers article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+  ========================================
+  Пользовательские стили
+  ========================================
+*/
+body {
+  background: #293f50;
+  color: #888;
+  font: 300 16px/22px "Roboto", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/*
+  ========================================
+  Сетка
+  ========================================
+*/
+header .hamburger-menu {
+  display: none;
+}
+.col-1-3 {
+  width: 33.33%;
+}
+
+.col-2-3 {
+  width: 66.66%;
+}
+
+.col-1-3,
+.col-2-3 {
+  vertical-align: top;
+  /*    display: inline-block;*/
+}
+
+.grid,
+.col-1-3,
+.col-2-3 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.container,
+.grid {
+  margin: 0 auto;
+  max-width: 960px;
+}
+.grid-registr {
+  display: flex;
+}
+.wrapper {
+  display: flex;
+  min-height: 100%;
+  overflow: hidden;
+  flex-direction: column;
+}
+/*.grid{
+  display: flex;
+}*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.group {
+  clear: both;
+  *zoom: 1;
+  display: flex;
+}
+/*
+ =========================================
+ Полосы
+ =========================================
+*/
+.row {
+  background: #fff;
+  padding: 66px 0 44px 0;
+}
+.row,
+.row-alt {
+  min-width: 960px;
+}
+.row-alt {
+  background: #cbe2c1;
+  background: linear-gradient(to right, #a1d3b0, #f6f1d3);
+  background: -webkit-linear-gradient(to right, #a1d3b0, #f6f1d3);
+  background: -moz-linear-gradient(to right, #a1d3b0, #f6f1d3);
+  padding: 44px 0 22px 0;
+}
+.row-row-alt {
+  background: #cbe2c1;
+  background: linear-gradient(to right, #a1d3b0, #f6f1d3);
+  background: -webkit-linear-gradient(to right, #a1d3b0, #f6f1d3);
+  background: -moz-linear-gradient(to right, #a1d3b0, #f6f1d3);
+  padding: 66px 0 44px 0;
+}
+
+/*
+  ========================================
+  Типографика
+  ========================================
+*/
+
+h1,
+h3,
+h4,
+h5,
+p {
+  margin-bottom: 22px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #648880;
+}
+
+h1 {
+  font-size: 36px;
+  line-height: 44px;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 44px;
+}
+
+h3 {
+  font-size: 21px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #a9b2b9;
+  font-weight: 400;
+}
+
+strong {
+  font-weight: 400;
+}
+
+cite,
+em {
+  font-style: italic;
+}
+/*
+==================================
+    Вступление 
+==================================
+*/
+.lead {
+  text-align: center;
+}
+.lead p {
+  font-size: 21px;
+  line-height: 33px;
+}
+/*
+
+кнопки
+
+*/
+.btn {
+  color: #fff;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  text-transform: uppercase;
+  border-radius: 9px;
+  display: inline-block;
+  margin: 0;
+  /* box-shadow: 0 0 15px #a6a6a6;*/
+}
+
+.btn-alt {
+  border: 1px solid #fff;
+  padding: 10px 30px;
+}
+.btn-alt:hover {
+  color: #648880;
+  background: #fff;
+}
+/*
+
+Главная страница
+
+*/
+.hero {
+  color: #fff;
+  text-align: center;
+  padding: 22px 80px 66px 80px;
+  line-height: 44px;
+}
+
+.hero h2 {
+  font-size: 36px;
+}
+
+.hero p {
+  font-weight: 100;
+  font-size: 24px;
+}
+
+.teaser a:hover h3 {
+  color: #a9b2b9;
+}
+.teaser img {
+  max-width: 100%;
+  display: block;
+  transition-duration: 400ms;
+}
+.teaser img:hover {
+  transform: scale(1.2);
+}
+.over-img {
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 6px;
+  margin-bottom: 22px;
+}
+/*
+---------------------------
+---------------------------
+      ГЛАВНЫЙ ЗАГОЛОВОК
+---------------------------
+---------------------------
+*/
+.df {
+  display: block;
+}
+.logo {
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-top: 4px solid #648880;
+  padding: 40px 0 22px 0;
+  line-height: 44px;
+  font-size: 48px;
+}
+.logo a {
+  transition-duration: 400ms;
+}
+.tagline {
+  text-align: right;
+  margin: 66px 0 22px 0;
+}
+.primary-nav {
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+}
+.nav a {
+  transition-duration: 400ms;
+}
+.primary-footer img {
+  width: 40px;
+  height: auto;
+  transition-duration: 400ms;
+}
+
+.primary-footer img:hover {
+  /*  transform: scale(1.2);*/
+  opacity: 0.6;
+}
+.footer-icon__container {
+  width: 115px;
+  margin: 0 auto;
+  margin-top: 3px;
+}
+.footer-icon__container .footer-icon__items {
+  margin: 0 7px;
+}
+.footer-icon__container img {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+}
+.footer-icon__container img:hover {
+  transform: scale(1.15);
+}
+/*
+---------------------------
+---------------------------
+      Основной подвал
+---------------------------
+---------------------------
+*/
+.primary-footer {
+  color: #648880;
+  font-size: 14px;
+  padding-bottom: 44px;
+  padding-top: 33px;
+}
+.primary-footer small {
+  padding-top: 11px;
+  white-space: nowrap;
+  font-weight: 400;
+}
+.li-btn {
+  padding-top: 10px;
+}
+
+/*
+  ==========================
+        Ссылки
+  ==========================
+*/
+a:hover {
+  color: #a9b2b9;
+}
+
+a {
+  text-decoration: none;
+  color: #648880;
+
+  transition: all 0.4s ease;
+}
+p a {
+  border-bottom: 1px solid #dfe2e5;
+}
+.primary-header a,
+.primary-footer a {
+  color: #ffffff;
+  white-space: nowrap;
+}
+.primary-header a:hover,
+.primary-footer a:hover {
+  color: #648880;
+}
+/*
+  ----------------------------
+  ----------------------------
+      НАВИГАЦИЯ
+  ----------------------------
+  ----------------------------
+*/
+.nav li {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.nav li:first-child {
+  margin-left: 23px;
+}
+.nav li:last-child {
+  margin-right: 0;
+}
+.primary-footer .nav li:last-child {
+  margin-right: 10px;
+}
+.nav {
+  display: flex;
+}
+/*
+===================================
+      Спикеры
+===================================
+*/
+.speaker-info {
+  border: 2px solid #dfe2e5;
+  border-radius: 7px;
+  margin-top: 88px;
+  padding-bottom: 22px;
+  text-align: center;
+}
+.speaker-info a {
+  display: block;
+}
+.speaker {
+  margin-bottom: 44px;
+  display: flex;
+}
+.speaker-info img {
+  border-radius: 50%;
+  height: 130px;
+  margin: -66px 0 22px 0;
+  vertical-align: top;
+}
+
+.bag-detected {
+  width: 130px;
+}
+/*
+===================================
+      Место проведение
+===================================
+*/
+.venue {
+  display: block;
+}
+.venue-theatre {
+  margin-bottom: 66px;
+}
+.venue-hotel {
+  margin-bottom: 66px;
+}
+.venue-map {
+  height: 150px;
+}
+.venue-theatre,
+.venue-hotel {
+  display: flex;
+}
+/*
+======================
+    видео
+======================
+*/
+.youtube:first-child {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+}
+.youtube:last-child {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.t {
+  text-align: center;
+  font-size: 33px;
+  line-height: 33px;
+}
+/*
+===============================
+===============================
+        Регистрация
+===============================
+===============================
+*/
+.grid-registr {
+  display: flex;
+}
+.why-attend {
+  list-style: square;
+  margin: 0 0 22px 30px;
+}
+form {
+  margin-bottom: 22px;
+}
+label,
+select,
+textarea {
+  font: 300 16px/22px "Roboto", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.register-group label {
+  color: #648880;
+  cursor: pointer;
+  font-weight: 400;
+}
+.register-group input,
+.register-group select,
+.register-group textarea {
+  border: 1px solid #c6c9cc;
+  border-radius: 6px;
+  color: #888;
+  display: block;
+  margin: 5px 0 27px 0;
+  padding: 5px 8px;
+}
+.register-group input,
+.register-group textarea {
+  width: 100%;
+}
+.register-group select {
+  height: 34px;
+  width: 60px;
+}
+.register-group textarea {
+  height: 78px;
+}
+.btn-default {
+  border: 0;
+  background: #648880;
+  padding: 11px 30px;
+}
+.btn-default:hover {
+  background: #77a198;
+}
+table {
+  width: 100%;
+  margin-bottom: 44px;
+}
+table:last-child {
+  margin-bottom: 0;
+}
+th,
+td {
+  padding: 22px;
+  vertical-align: top;
+}
+th {
+  padding-right: 44px;
+  text-align: right;
+  width: 20%;
+}
+td {
+  width: 40%;
+}
+thead {
+  line-height: 44px;
+}
+thead th {
+  font-size: 24px;
+  color: #648880;
+}
+tbody th {
+  color: #a9b2b9;
+  font-size: 14px;
+  padding-top: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+tbody td {
+  border-top: 1px solid #dfe2e5;
+  padding-top: 21px;
+  padding-left: 0;
+}
+tbody td:first-of-type {
+  padding-right: 15px;
+}
+tbody td:last-of-type {
+  padding-left: 15px;
+}
+tbody td:only-of-type {
+  padding-left: 0;
+  padding-right: 0;
+}
+table a {
+  color: #888;
+}
+table h4 {
+  margin-bottom: 0;
+}
+.s-ofset {
+  color: #a9b2b9;
+}
+thead td {
+  padding-left: 0;
+}
+/*
+=============================================
+                  Ошибка
+=============================================
+*/
+.error {
+}
+.error_block {
+  text-align: center;
+  margin-top: 20%;
+}
+.error_block h1,
+.error_block h2,
+.error_block a {
+  color: #fff;
+}
+.error_block h1 {
+  font-size: 40px;
+}
+.error_block h2 {
+  font-size: 28px;
+  margin-bottom: 5%;
+}
+.error_block a {
+  font-size: 24px;
+  text-decoration: underline;
+}
+@media (max-width: 1200px) {
+  .row,
+  .row-alt {
+    min-width: auto;
+  }
+  .container {
+    max-width: 970px;
+  }
+}
+.footer_adaptiv_a {
+  display: none;
+}
+@media (max-width: 992px) {
+  .row,
+  .row-alt {
+    min-width: auto;
+  }
+  .nav li:first-child {
+    margin-left: 10px;
+  }
+  .speaker-conteiner {
+    display: block;
+  }
+  .container {
+    max-width: 760px;
+  }
+  .container {
+    padding-left: 0px;
+    padding-right: 0;
+  }
+  .logo {
+    font-size: 37.4px;
+    line-height: 44px;
+  }
+  .nav li {
+    margin-right: 10px;
+    margin-left: 0;
+  }
+  .nav li:last-child {
+    margin-right: 0;
+  }
+  .primary-nav {
+    font-size: 13.4px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    max-width: none;
+  }
+  .tagline {
+    margin-top: 30px;
+  }
+
+  /*
+
+==========================================
+                МЕНЮ БУРГЕР
+==========================================
+
+  /* скрываем чекбокс */
+  header .hamburger-menu {
+    display: block;
+  }
+  .primary-nav {
+    display: none;
+  }
+  #menu__toggle {
+    position: fixed;
+    display: none;
+    opacity: 0;
+  }
+  /* стилизуем кнопку */
+  .menu__btn {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    height: 26px;
+    width: 36px;
+    cursor: pointer;
+    background-color: #648880;
+    padding: 21px 41px 21px 10px;
+    bottom: 20px;
+    left: 75%;
+    top: 0px;
+    margin: 0;
+  }
+  .menu__btn span {
+    width: 70%;
+  }
+
+  /* добавляем "гамбургер" */
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #616161;
+  }
+
+  .menu__btn > span::before {
+    content: "";
+    top: -8px;
+  }
+
+  .menu__btn > span::after {
+    content: "";
+    top: 8px;
+  }
+
+  /* контейнер меню */
+  .menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 105px 0 70px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #293f50;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+    left: 0;
+    top: -400px;
+  }
+
+  /* элементы меню */
+  .menu__item {
+    display: block;
+    padding: 17px 24px;
+    color: #333;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .menu__item:hover {
+    background-color: #cfd8dc;
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+    position: fixed;
+  }
+  #menu__toggle:checked ~ .menu__btn {
+    background: inherit;
+  }
+  #menu__toggle:checked ~ .content:first-child {
+    margin-top: 400px;
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    top: 0;
+  }
+
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    transition-duration: 0.25s;
+  }
+
+  .menu__box {
+    transition-duration: 0.25s;
+  }
+
+  .menu__item {
+    transition-duration: 0.25s;
+  }
+}
+@media (max-width: 680px) {
+  .nav {
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer-icon__container {
+    margin: 0 auto;
+    margin-top: 15px;
+    display: block;
+    /*width: 100%;*/
+  }
+  .primary-footer {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 630px) {
+  .tagline {
+    font-size: 17px;
+  }
+}
+@media (max-width: 560px) {
+  .primary-footer {
+    flex-direction: column;
+  }
+  .primary-footer small {
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .error_block {
+    margin-top: 30%;
+  }
+  .footer-icon__container {
+    display: none;
+  }
+  .error_block h2 {
+    margin-bottom: 20%;
+  }
+  .row,
+  .row-alt {
+    min-width: auto;
+  }
+
+  .col-1-3 {
+    display: block;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .col-1-3:last-child {
+    margin-bottom: 0;
+  }
+
+  .venue-theatre,
+  .venue-hotel {
+    display: block;
+  }
+  .venue-map {
+    height: 264px;
+    width: 100%;
+    padding: 0;
+  }
+  .tagline {
+    display: none;
+  }
+  .primary-header {
+    margin: 0;
+    padding: 0 5px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .grid-registr {
+    display: block;
+  }
+  .hero {
+    padding: 10px 5px 50px 5px;
+  }
+  .speaker {
+    display: block;
+  }
+  .col-2-3 {
+    width: 100%;
+  }
+  thead {
+    display: table-caption;
+  }
+  .why-attend {
+    margin-bottom: 50px;
+  }
+  .row {
+    padding-top: 40px;
+  }
+  .menu__btn {
+    left: auto;
+    right: 100%;
+    margin-top: 55px;
+  }
+  /*
+===============================
+            footer
+===============================
+*/
+  .primary-footer nav {
+    display: none;
+  }
+  .primary-footer {
+    display: block;
+    text-align: center;
+    padding-bottom: 33px;
+  }
+  .primary-footer small {
+    padding-bottom: 20px;
+  }
+  .footer_adaptiv_a {
+    display: grid;
+    margin-top: 10px;
+    text-decoration: underline;
+  }
+  .footer_adaptiv_a a:nth-child(2) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .footer-icon__container__adaptive {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+  .footer-icon__container__adaptive .footer-icon__items {
+    margin: 0 20px;
+  }
+}
+@media (max-width: 380px) {
+  .menu__btn {
+    right: 31px;
+  }
+}
+@media (max-width: 320px) {
+  .grid,
+  .col-1-3,
+  .col-2-3 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .menu__btn {
+    right: 0;
+  }
+}
